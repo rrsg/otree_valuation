@@ -1,0 +1,40 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %} [VSVJ-S-CS] Instructions
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Hello! Please read the following instructions carefully.
+    </p>
+
+    <p>
+        It will take around 10 to 15 minutes to complete the survey.
+        If you have any questions, raise your hand and one of the researchers will assist you.
+        Please do not communicate with your seatmate during the study and keep your mobile phone in silent mode.
+    </p>
+
+    <p>
+        In this questionnaire, you will be asked questions regarding environmental programs and projects.
+        The survey is entirely anonymous and non-participation will not affect your grades or academic standing in the University.
+        To preserve the anonymity of the data, each person is assigned a random code number that will be used to
+        keep track of data produced by the experiment.
+        Results of the study in any presentation or publication will include only group results,
+        and no identifying information will ever be used.
+    </p>
+
+    <p>
+        While answering the questions in next few pages, please remember that the tokens provided to you
+        represent gift certificates. At the end of the study, these tokens will be converted to actual gift certificates
+        reedeemable at Starbucks and/or Jollibee. Each token provided to you is worth Php 10.00 each.
+    </p>
+
+    To begin, please enter your six-digit participant ID below.
+    {% formfield player.code %}
+
+    {% next_button %}
+
+
+{% endblock %}

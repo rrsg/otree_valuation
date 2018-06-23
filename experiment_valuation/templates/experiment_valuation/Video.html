@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %} Please watch the following video
+{% endblock %}
+
+{% block content %}
+    <video width="640" height="480" controls>
+        <source src="{% static "vids/coastal1.mp4" %}"/>
+    </video>
+    {% next_button %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %} Just some more questions
+{% endblock %}
+
+{% block content %}
+
+    <p>
+    Please select the best answer:
+
+    </p>
+    {% formfield player.age %}
+    {% formfield player.sex %}
+    {% formfield player.degree %}
+    {% formfield player.residence %}
+    {% formfield player.born %}
+    {% formfield player.educ %}
+    {% formfield player.held %}
+    {% formfield player.educfather %}
+    {% formfield player.educmother %}
+    {% formfield player.job %}
+    {% formfield player.jobhrs %}
+    {% formfield player.headhh %}
+    {% formfield player.headworking %}
+    {% formfield player.headmembers %}
+    {% formfield player.jobfather %}
+    {% formfield player.jobmother %}
+    {% formfield player.expdaily %}
+    {% formfield player.expdailyfood %}
+    {% formfield player.expdailytrans %}
+    {% formfield player.expdailyhousing %}
+    {% formfield player.trust1 %}
+    {% formfield player.trust2 %}
+    {% formfield player.trust3 %}
+    {% formfield player.trust4 %}
+
+{% next_button %}
+
+{% endblock %}

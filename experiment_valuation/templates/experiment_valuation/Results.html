@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Thank you for your participation! That ends the questionnaire.
+    </p>
+
+    <p>
+        Please verify the following:
+    </p>
+
+    <p>
+        Your Participant ID is {{ player.code }}.
+    </p>
+
+    <p>
+        For the first game, you started with an endowment of {{ Constants.endowment }},
+        of which you contributed {{ player.contributionVS1 }} to the conservation of seagrass
+        Your payoff is therefore {{ player.payoff }}.
+    </p>
+
+    <p>
+        For the second game, you started with an endowment of {{ Constants.endowment }},
+        of which you contributed {{ player.contributionVJ1 }} to the conservation of seagrass and
+        {{ player.contributionVJ2 }} to the conservation of dugongs
+        Your payoff is therefore {{ player.payoff }}.
+    </p>
+
+
+
+
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
+

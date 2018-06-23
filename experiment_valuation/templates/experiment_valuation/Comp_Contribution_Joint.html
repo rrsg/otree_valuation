@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %} [CJ] New Government Program
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        This coming school year, another student organization is launching a program to support conservation efforts to
+        save dugongs (manatees) in Kalibo, Aklan. To help implement the program, the organization is also requesting
+        students of UP Diliman to contribute to help fund the program.
+    </p>
+
+    <p>
+        Since both programs are accepting donations, you have the opportunity to contribute a portion, all, or none of
+        the tokens you received today either to the (A) conservation and restoration of seagrass, (B) conservation and
+        protect the dugong (manatees).
+
+    </p>
+
+    {% formfield player.contributionCJ1 label="[CJ.1] Of the Php 100.00, how much are you willing to contribute to (A) the SEAGRASS program?" %}
+    {% formfield player.contributionCJ2 label="[CJ.2] Of the Php 100.00, how much are you willing to contribute to (B) the DUGONG program?" %}
+
+    <p>
+        Take note that the sume of both amounts should be less than or equal to Php 100.00.
+    </p>
+
+{% next_button %}
+
+{% endblock %}

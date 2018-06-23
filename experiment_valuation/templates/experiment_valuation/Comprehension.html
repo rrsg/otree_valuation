@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %} Just some questions
+{% endblock %}
+
+{% block content %}
+
+    <p>
+    Please select the best answer:
+    </p>
+
+    {% formfield player.check1 label="What is the difference between seaweed and seagrass?" %}
+
+    {% next_button %}
+
+{% endblock %}
